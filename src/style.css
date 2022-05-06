@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Need to specify telegram themes colors first */
+#app {
+  background-color: var(--tg-theme-bg_color);
+  color: var(--tg-theme-text-color);
+}
+
+.tg-movable-screen-height {
+  height: var(--tg-viewport-stable-height, 100vh);
+  transition: height 0.25s ease;
+}
